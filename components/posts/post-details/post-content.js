@@ -2,7 +2,7 @@ import React from "react";
 import PostHeader from "./post-header";
 import classes from "./post-content.module.css";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { POST_IMAGE_PATH } from "../../../helpers/endpoint";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import atomDark from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark";
@@ -30,6 +30,7 @@ const PostContent = (props) => {
               height={300}
               width={600}
               priority
+              layout="responsive"
             />
           </div>
         );
