@@ -125,7 +125,9 @@ const ContactForm = () => {
           />
         </div>
         <div className={classes.actions}>
-          <button type="submit">Send Message</button>
+          <button type="submit" disabled={requestStatus === "pending"}>
+            Send Message
+          </button>
         </div>
       </form>
       {notification && (

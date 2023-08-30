@@ -7,7 +7,7 @@ const Homepage = (props) => {
   return (
     <>
       <Head>
-        <title>Abhishek Blog</title>
+        <title>Tech Blog</title>
         <meta
           name="description"
           content="I post about the programming and web development"
